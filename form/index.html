@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a website for Tyler Sheffield's New Testament Project">
+    <meta property="og:title" content="Tyler's New Testament Project" />
+    <meta property="og:description" content="This is a website for Tyler Sheffield's New Testament Project" />
+    <meta property="og:image" content="../images/biblencross.svg">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tbsheff.github.io/NewTestamentPage/" />
+    <meta property="og:site_name" content="The New Testament" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../Styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&family=Fraunces:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/main.css">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Form </title>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".menu-icon").addEventListener("click", () => {
+                document.querySelector(".main-menu").classList.toggle("menu-show");
+            });
+        });
+    </script>
+</head>
+<body class="form">
+<header>
+    <div class="main-menu">
+        <div class="menu-icon">
+            <svg viewbox="0 0 60 60" width="60px" height="60px">
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="../index.html">Home</a>
+                </li>
+                <li><a href="../about">About</a></li>
+                <li><a href="../contact">Contact</a></li>
+                <li><div class="active-page">Form</div></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <h1>New Testament Survey</h1>
+    <section>
+         <div class="cross"><img src="../images/biblencross.svg" alt="Bible and Cross"></div>
+         <div class="loading hidden">
+            <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+         </div>
+         <p class="success-message hidden">Thank you for your input!</p>
+         <p class="error-message hidden">Something has gone terribly wrong and I'm rather afraid I don't know what to
+             do.
+         </p>
+        <form name="NewTestament">
+            <label for="name">Full name</label>
+
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email address*</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="verse">Your favorite scripture</label>
+            <input type="text" name="verse" id="verse" placeholder="John 3:16">
+
+            <fieldset>
+                <legend>Which of the following are the 4 Gospels? (Check all that apply)</legend>
+
+     
+                <input type="checkbox" id="matthew" name="gospels" value="matthew">
+                <label for="matthew">Matthew</label>
+
+                <input type="checkbox" id="mark" name="gospels" value="mark">
+                <label for="mark">Mark</label>
+
+                <input type="checkbox" id="luke" name="gospels" value="luke">
+                <label for="luke">Luke</label>
+
+                <input type="checkbox" id="john" name="gospels" value="john">
+                <label for="john">John</label>
+            </fieldset>
+
+            <fieldset class="fav-gospel">
+                <legend>Which is your favorite gospel?</legend>
+
+                <input type="radio" name="fav" id="matt" value="matt">
+                <label for="matt">Matthew</label>
+
+                <input type="radio" name="fav" id="mark2" value="mark2">
+                <label for="mark2">Mark</label>
+
+                <input type="radio" name="fav" id="luke2" value="luke2">
+                <label for="luke2">Luke</label>
+
+                <input type="radio" name="fav" id="john2" value="john2">
+                <label for="john2">John</label>
+            </fieldset>
+
+            <label for="testimony">Share your testimony</label>
+            <textarea name="testimony" id="testimony" rows="10" placeholder="Record your testimony here"></textarea>
+
+            <button type="submit">Submit Now</button>
+
+        </form>
+    </section>
+    
+      <!-- <div class="svg">
+        <svg viewbox="0 0 120 120" width="200" height="200">
+
+        <circle cx="60" cy="60" r="57.5" stroke="blue" fill="yellow" stroke-width="5" />
+        <circle cx="40" cy="40" r="10" stroke="black" fill="black" stroke-width="2.5" />
+        <circle cx="80" cy="40" r="10" stroke="black" fill="black" stroke-width="2.5" />
+        <rect x="35" y="75" width="50" height="10" />
+
+    </svg>
+</div> -->
+   
+</main>
+    <footer>
+        <p>TYLER SHOULD GET 100% ON THIS PROJECT</p>
+    </footer>
+    <script>
+        // enter the URL for your Google Sheet 
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbztj5803HBFYIivDynnuC12DXGsVIfamS0o0Y5-cdfIKMIO1h_I5KLiEGGy8XbMGJ5pEg/exec'
+
+        // add a name attribute to your <form> and enter its value here 
+        const form = document.forms['NewTestament']
+
+        // enter the value of your checkboxes' name attribute
+        const checkboxName = "gospels"
+
+        // set these to your loader and message classes
+        const loading = document.querySelector('.loading')
+        const successMessage = document.querySelector('.success-message')
+        const errorMessage = document.querySelector('.error-message')
+
+        // this will run when the submit button is clicked
+        form.addEventListener('submit', event => {
+            // stops default form handling so we can submit it to Google Sheets instead
+            event.preventDefault()
+
+            // show the loader and hide form
+            form.classList.add('hidden')
+            loading.classList.remove('hidden')
+
+            // collect the form values into an object that can be sent to Google Sheets
+            let fd = new FormData(form);
+
+            /* If more than one checkbox is selected, the form will have multiple keys 
+               (checkbox name). Only the first checkbox value would be entered into 
+               Google Sheets. 
+               To get around this, concat all the selected checkbox values into a single 
+               string and send that value */
+
+            // grab all the selected values stored as key/value pairs of checkboxName/value
+            let checkBoxValues = fd.getAll(checkboxName)
+
+            // then delete them from the formData object
+            fd.delete(checkboxName);
+
+            // create a string
+            let text = ""
+            if (checkBoxValues.length <= 2) {
+                text = checkBoxValues.join(" and ")
+            } else {
+                let end = checkBoxValues.pop();
+                text = checkBoxValues.join(", ");
+                text += ", and " + end;
+            }
+            // add the key/value pair checkboxName/text back to the formData object
+            fd.append(checkboxName, text);
+
+            // use an asynchronous request to POST your formData object to your Google Sheet
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: fd,
+                })
+                // if response ok, show success message and hide loader, else display error
+                .then(response => {
+                    loading.classList.add('hidden')
+                    if (response.ok) {
+                        console.log('Success!', response)
+                        successMessage.classList.remove('hidden')
+                    } else {
+                        console.log(
+                            "Something has gone terribly wrong and I'm rather afraid I don't know what to do.",
+                            response)
+                        errorMessage.classList.remove('hidden')
+                    }
+                })
+                // if error, show error message and hide loader
+                .catch(error => {
+                    console.error('Error!', error.message)
+                    errorMessage.classList.remove('hidden')
+                    loading.classList.add('hidden')
+                })
+        })
+    </script>
+</body>
+
+</html>
